@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddressCell" rowHeight="107" id="KGk-i7-Jjw" customClass="AddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="leaf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1UA-DT-XE9">
+                        <rect key="frame" x="15" y="10" width="21" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18221381831" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWj-he-iIr">
+                        <rect key="frame" x="66" y="10" width="75" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京市东城区100号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rf5-lr-Jo0">
+                        <rect key="frame" x="15" y="39.5" width="124" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YO3-fa-sqS">
+                        <rect key="frame" x="15" y="66" width="80" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="8dW-tv-9il"/>
+                            <constraint firstAttribute="height" constant="40" id="W2D-it-LME"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="设为默认地址">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="setDefaultAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IOG-y5-zir"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DM-JL-0LV">
+                        <rect key="frame" x="205" y="66" width="80" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="删除">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="deleteAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jkx-gJ-ZFg"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggj-5o-bSn">
+                        <rect key="frame" x="110" y="66" width="80" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="编辑">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="editAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Nse-MT-Akt"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6DM-JL-0LV" firstAttribute="width" secondItem="YO3-fa-sqS" secondAttribute="width" id="66w-FK-MQi"/>
+                    <constraint firstItem="ggj-5o-bSn" firstAttribute="width" secondItem="YO3-fa-sqS" secondAttribute="width" id="F8h-ca-UjB"/>
+                    <constraint firstItem="rf5-lr-Jo0" firstAttribute="top" secondItem="1UA-DT-XE9" secondAttribute="bottom" constant="15" id="FJM-cH-ePp"/>
+                    <constraint firstItem="1UA-DT-XE9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="H13-Jc-5Cn"/>
+                    <constraint firstItem="6DM-JL-0LV" firstAttribute="height" secondItem="YO3-fa-sqS" secondAttribute="height" id="HPr-nL-zQl"/>
+                    <constraint firstItem="MWj-he-iIr" firstAttribute="centerY" secondItem="1UA-DT-XE9" secondAttribute="centerY" id="JFP-dj-79v"/>
+                    <constraint firstItem="6DM-JL-0LV" firstAttribute="leading" secondItem="ggj-5o-bSn" secondAttribute="trailing" constant="15" id="JQ7-kc-pu2"/>
+                    <constraint firstItem="YO3-fa-sqS" firstAttribute="top" secondItem="rf5-lr-Jo0" secondAttribute="bottom" constant="9.5" id="Ntb-uS-pMb"/>
+                    <constraint firstItem="1UA-DT-XE9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="PNk-N6-blX"/>
+                    <constraint firstItem="YO3-fa-sqS" firstAttribute="leading" secondItem="rf5-lr-Jo0" secondAttribute="leading" id="Q02-LZ-niT"/>
+                    <constraint firstItem="6DM-JL-0LV" firstAttribute="centerY" secondItem="ggj-5o-bSn" secondAttribute="centerY" id="SNe-wf-Qbo"/>
+                    <constraint firstItem="ggj-5o-bSn" firstAttribute="height" secondItem="YO3-fa-sqS" secondAttribute="height" id="W34-3V-vne"/>
+                    <constraint firstItem="MWj-he-iIr" firstAttribute="leading" secondItem="1UA-DT-XE9" secondAttribute="trailing" constant="30" id="YGw-19-7zo"/>
+                    <constraint firstItem="ggj-5o-bSn" firstAttribute="leading" secondItem="YO3-fa-sqS" secondAttribute="trailing" constant="15" id="Yzy-tv-nFz"/>
+                    <constraint firstItem="ggj-5o-bSn" firstAttribute="top" secondItem="YO3-fa-sqS" secondAttribute="top" id="qXW-Oj-IGm"/>
+                    <constraint firstItem="rf5-lr-Jo0" firstAttribute="leading" secondItem="1UA-DT-XE9" secondAttribute="leading" id="ylG-HE-ewp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="addressLabel" destination="rf5-lr-Jo0" id="bKP-qy-SGk"/>
+                <outlet property="deleteBtn" destination="6DM-JL-0LV" id="jtE-OY-pyD"/>
+                <outlet property="editBtn" destination="ggj-5o-bSn" id="gtv-RR-UL3"/>
+                <outlet property="nameLabel" destination="1UA-DT-XE9" id="DrL-5I-a6z"/>
+                <outlet property="phoneLabel" destination="MWj-he-iIr" id="OWV-2i-15Z"/>
+                <outlet property="settingDefaultBtn" destination="YO3-fa-sqS" id="c0e-xR-FBJ"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="108.81696428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalViewController">
+            <connections>
+                <outlet property="homeBtn" destination="YSi-2T-ffx" id="t2F-mW-cMd"/>
+                <outlet property="joinShopCartBtn" destination="mhU-cd-XSh" id="gz1-H4-ryC"/>
+                <outlet property="purchaseBtn" destination="3h2-q1-CTj" id="Xfd-jd-T2u"/>
+                <outlet property="serviceBtn" destination="stc-Yq-dMW" id="hfx-6F-Rsv"/>
+                <outlet property="shopCartBtn" destination="5uQ-XS-VVU" id="hfn-P9-bbl"/>
+                <outlet property="tableView" destination="Z0q-nN-VAj" id="Qm6-Qc-o7p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0q-nN-VAj">
+                    <rect key="frame" x="0.0" y="44" width="414" height="754"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNY-di-pMr">
+                    <rect key="frame" x="0.0" y="798" width="414" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSi-2T-ffx">
+                            <rect key="frame" x="0.0" y="0.0" width="59" height="64"/>
+                            <state key="normal" title="首页"/>
+                            <connections>
+                                <action selector="goHomeAction:" destination="-1" eventType="touchUpInside" id="Kj8-MG-0bo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stc-Yq-dMW">
+                            <rect key="frame" x="59" y="0.0" width="59.5" height="64"/>
+                            <state key="normal" title="客服"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uQ-XS-VVU">
+                            <rect key="frame" x="118.5" y="0.0" width="59" height="64"/>
+                            <state key="normal" title="购物车"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhU-cd-XSh">
+                            <rect key="frame" x="177.5" y="0.0" width="118" height="64"/>
+                            <state key="normal" title="加入购物车"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h2-q1-CTj">
+                            <rect key="frame" x="295.5" y="0.0" width="118.5" height="64"/>
+                            <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="地址列表">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="purchaseAction:" destination="-1" eventType="touchUpInside" id="5VZ-rO-3vZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="3h2-q1-CTj" firstAttribute="width" secondItem="mhU-cd-XSh" secondAttribute="width" id="2O6-E0-8fs"/>
+                        <constraint firstItem="5uQ-XS-VVU" firstAttribute="width" secondItem="YSi-2T-ffx" secondAttribute="width" id="3CE-fv-fEo"/>
+                        <constraint firstItem="3h2-q1-CTj" firstAttribute="width" secondItem="YSi-2T-ffx" secondAttribute="width" multiplier="2" id="49D-2F-sDv"/>
+                        <constraint firstItem="YSi-2T-ffx" firstAttribute="leading" secondItem="qNY-di-pMr" secondAttribute="leading" id="8SS-6M-FLO"/>
+                        <constraint firstItem="5uQ-XS-VVU" firstAttribute="leading" secondItem="stc-Yq-dMW" secondAttribute="trailing" id="9Rt-hM-NdI"/>
+                        <constraint firstItem="3h2-q1-CTj" firstAttribute="leading" secondItem="mhU-cd-XSh" secondAttribute="trailing" id="GL8-Ed-GoU"/>
+                        <constraint firstAttribute="bottom" secondItem="YSi-2T-ffx" secondAttribute="bottom" id="HC4-Iq-1wj"/>
+                        <constraint firstItem="stc-Yq-dMW" firstAttribute="height" secondItem="YSi-2T-ffx" secondAttribute="height" id="MqT-dy-Rub"/>
+                        <constraint firstItem="3h2-q1-CTj" firstAttribute="height" secondItem="mhU-cd-XSh" secondAttribute="height" id="RkG-VH-h1B"/>
+                        <constraint firstItem="stc-Yq-dMW" firstAttribute="width" secondItem="YSi-2T-ffx" secondAttribute="width" id="Rwa-nK-zM5"/>
+                        <constraint firstAttribute="bottom" secondItem="mhU-cd-XSh" secondAttribute="bottom" id="SGf-CM-4QX"/>
+                        <constraint firstAttribute="bottom" secondItem="3h2-q1-CTj" secondAttribute="bottom" id="bYh-g7-xk5"/>
+                        <constraint firstItem="5uQ-XS-VVU" firstAttribute="height" secondItem="YSi-2T-ffx" secondAttribute="height" id="byp-z9-JVh"/>
+                        <constraint firstItem="YSi-2T-ffx" firstAttribute="top" secondItem="qNY-di-pMr" secondAttribute="top" id="csV-8E-UqZ"/>
+                        <constraint firstItem="mhU-cd-XSh" firstAttribute="leading" secondItem="5uQ-XS-VVU" secondAttribute="trailing" id="eQQ-Yo-SXt"/>
+                        <constraint firstAttribute="trailing" secondItem="3h2-q1-CTj" secondAttribute="trailing" id="qgC-Gw-RPQ"/>
+                        <constraint firstAttribute="bottom" secondItem="stc-Yq-dMW" secondAttribute="bottom" id="uMe-3Z-epk"/>
+                        <constraint firstAttribute="bottom" secondItem="5uQ-XS-VVU" secondAttribute="bottom" id="vcI-r6-VwD"/>
+                        <constraint firstItem="stc-Yq-dMW" firstAttribute="leading" secondItem="YSi-2T-ffx" secondAttribute="trailing" id="xnh-CK-3SH"/>
+                        <constraint firstItem="3h2-q1-CTj" firstAttribute="top" secondItem="qNY-di-pMr" secondAttribute="top" id="zw9-On-s1c"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="N69-oj-C2c"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Z0q-nN-VAj" secondAttribute="bottom" constant="64" id="HrU-8x-Mhr"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="qNY-di-pMr" secondAttribute="bottom" constant="34" id="LPb-ob-SpR">
+                    <variation key="heightClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Z0q-nN-VAj" secondAttribute="trailing" id="M8x-8Z-fGL"/>
+                <constraint firstItem="qNY-di-pMr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="gyX-yD-JgJ"/>
+                <constraint firstItem="qNY-di-pMr" firstAttribute="top" secondItem="Z0q-nN-VAj" secondAttribute="bottom" id="lcn-In-lkq"/>
+                <constraint firstItem="Z0q-nN-VAj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="nbt-F2-E9b"/>
+                <constraint firstItem="Z0q-nN-VAj" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="o8t-Dt-K2E"/>
+                <constraint firstItem="qNY-di-pMr" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="wfe-vb-zRX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-500" y="510"/>
+        </view>
+    </objects>
+</document>

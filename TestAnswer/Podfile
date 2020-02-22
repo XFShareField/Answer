@@ -1,0 +1,11 @@
+platform :ios, '9.0'
+
+target 'TestAnswer' do
+   pod 'SDWebImage'
+   pod 'MJRefresh'
+   pod 'MJExtension'
+   pod 'SDCycleScrollView','>= 1.80'
+
+
+end
+
